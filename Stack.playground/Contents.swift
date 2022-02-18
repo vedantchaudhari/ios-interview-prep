@@ -4,7 +4,7 @@ struct Stack<Element> {
     private var items: [Element] = []
     
     func peek() -> Element {
-        guard let topItem = items.first else {
+        guard let topItem = items.last else {
             fatalError("This stack contains no items!")
         }
         
